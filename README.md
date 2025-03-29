@@ -30,9 +30,9 @@ A basic CRUD (Create, Read, Update, Delete) application built using HTML, CSS, a
 
 project-folder/
 │
-├── index.html # Main HTML file
-├── style.css # CSS styles
-└── script.js # JavaScript functionality
+├── index.html        # Main HTML file
+├── style.css         # CSS styles
+└── script.js         # JavaScript functionality
 
 ## LocalStorage Details
 
