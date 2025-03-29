@@ -26,14 +26,6 @@ A basic CRUD (Create, Read, Update, Delete) application built using HTML, CSS, a
    - Edit data: Click the "Edit" button next to the entry you want to modify
    - Delete data: Click the "Delete" button next to the entry you want to remove
 
-## File Structure
-
-project-folder/
-│
-├── index.html        # Main HTML file
-├── style.css         # CSS styles
-└── script.js         # JavaScript functionality
-
 ## LocalStorage Details
 
 - Data is stored in the browser's localStorage under the key 'crudData'
