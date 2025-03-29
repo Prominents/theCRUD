@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CRUD Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
     <div class="container">
-        <h1>Data Management</h1>
+        <div class="header">
+            <h1>Data Management</h1>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span class="theme-icon">��</span>
+            </button>
+        </div>
         <form id="dataForm">
             <input type="text" id="name" placeholder="Name" required>
             <input type="number" id="age" placeholder="Age" required>

@@ -65,18 +65,31 @@ renderTable();
 // Theme management
 function toggleTheme() {
     const body = document.body;
+    const themeIcon = document.querySelector('.theme-icon');
+    
     body.classList.toggle('dark-mode');
+    
+    // Update icon based on theme
+    if (body.classList.contains('dark-mode')) {
+        themeIcon.textContent = '☀️';
+    } else {
+        themeIcon.textContent = '🌙';
+    }
     
     // Save theme preference to localStorage
     const isDarkMode = body.classList.contains('dark-mode');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 }
 
-// Apply saved theme on page load
 function applySavedTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
+    const themeIcon = document.querySelector('.theme-icon');
+    
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
+        themeIcon.textContent = '☀️';
+    } else {
+        themeIcon.textContent = '🌙';
     }
 }
 
