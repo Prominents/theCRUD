@@ -16,6 +16,7 @@ body {
 h1 {
     text-align: center;
     color: #333;
+    transition: color 0.3s ease;
 }
 
 form {
@@ -77,4 +78,97 @@ th {
 .delete-btn {
     background-color: #dc3545;
     color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e08e06;  /* Slightly darker orange */
+}
+
+.delete-btn:hover {
+    background-color: #c82333;  /* Slightly darker red */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode table {
+    color: #e0e0e0;
+}
+
+.dark-mode th {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode td {
+    border-bottom-color: #444;
+}
+
+.dark-mode .edit-btn {
+    background-color: #ff9c07;
+    color: #121212;
+}
+
+.dark-mode .delete-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.dark-mode .edit-btn:hover {
+    background-color: #ffb340;  /* Brighter orange for dark mode */
+    color: #121212;
+}
+
+.dark-mode .delete-btn:hover {
+    background-color: #e53935;  /* Brighter red for dark mode */
+    color: #ffffff;
+}
+
+.dark-mode button:not(.theme-toggle) {
+    color: #121212;
+}
+
+.dark-mode .theme-toggle {
+    background-color: #218838;
+    color: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode .theme-toggle {
+    background-color: #218838;
+}
+
+.dark-mode h1 {
+    color: #e0e0e0;
 }
